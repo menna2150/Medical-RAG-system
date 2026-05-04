@@ -1,0 +1,758 @@
+[
+  {
+    "drug_id": "m_paracetamol",
+    "generic_name": "paracetamol",
+    "classes": ["analgesic", "antipyretic"],
+    "indications": ["fever", "mild to moderate pain", "headache"],
+    "brands_egypt": ["Panadol", "Adol", "Cetal", "Abimol"],
+    "price_egp": "8 – 35",
+    "last_verified": "2025-09",
+    "notes": "OTC. Avoid >4g/day adult."
+  },
+  {
+    "drug_id": "m_ibuprofen",
+    "generic_name": "ibuprofen",
+    "classes": ["nsaid", "analgesic", "antipyretic"],
+    "indications": ["pain", "inflammation", "fever", "migraine"],
+    "brands_egypt": ["Brufen", "Profinal", "Rapidol"],
+    "price_egp": "20 – 60",
+    "last_verified": "2025-09",
+    "notes": "Caution in renal impairment, peptic ulcer disease."
+  },
+  {
+    "drug_id": "m_amoxicillin",
+    "generic_name": "amoxicillin",
+    "classes": ["antibiotic", "penicillin"],
+    "indications": ["bacterial pharyngitis", "community-acquired pneumonia", "otitis media"],
+    "brands_egypt": ["Hi-Pen", "Amoxil", "E-Mox"],
+    "price_egp": "30 – 70",
+    "last_verified": "2025-09",
+    "notes": "Check penicillin allergy."
+  },
+  {
+    "drug_id": "m_amoxiclav",
+    "generic_name": "amoxicillin-clavulanate",
+    "classes": ["antibiotic", "penicillin"],
+    "indications": ["community-acquired pneumonia", "sinusitis", "UTI"],
+    "brands_egypt": ["Augmentin", "Megamox", "Curam"],
+    "price_egp": "70 – 220",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_azithromycin",
+    "generic_name": "azithromycin",
+    "classes": ["antibiotic", "macrolide"],
+    "indications": ["community-acquired pneumonia", "atypical pneumonia"],
+    "brands_egypt": ["Zithromax", "Zisrocin", "Xithrone"],
+    "price_egp": "60 – 180",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_oseltamivir",
+    "generic_name": "oseltamivir",
+    "classes": ["antiviral"],
+    "indications": ["influenza A/B"],
+    "brands_egypt": ["Tamiflu"],
+    "price_egp": "320 – 520",
+    "last_verified": "2025-09",
+    "notes": "Most effective within 48h of symptom onset."
+  },
+  {
+    "drug_id": "m_phenoxymethylpenicillin",
+    "generic_name": "phenoxymethylpenicillin",
+    "classes": ["antibiotic", "penicillin"],
+    "indications": ["streptococcal pharyngitis"],
+    "brands_egypt": ["Ospen"],
+    "price_egp": "25 – 60",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_nitrofurantoin",
+    "generic_name": "nitrofurantoin",
+    "classes": ["antibiotic", "urinary antiseptic"],
+    "indications": ["lower urinary tract infection"],
+    "brands_egypt": ["Uvamin", "Macrodantin"],
+    "price_egp": "30 – 90",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_fosfomycin",
+    "generic_name": "fosfomycin",
+    "classes": ["antibiotic"],
+    "indications": ["uncomplicated UTI"],
+    "brands_egypt": ["Monurol"],
+    "price_egp": "180 – 300",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_trimethoprim",
+    "generic_name": "trimethoprim",
+    "classes": ["antibiotic"],
+    "indications": ["UTI"],
+    "brands_egypt": ["Septrin (with sulfamethoxazole)"],
+    "price_egp": "20 – 60",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_ors",
+    "generic_name": "oral rehydration salts",
+    "classes": ["electrolyte replacement"],
+    "indications": ["dehydration", "acute gastroenteritis"],
+    "brands_egypt": ["Rehydran", "Hydrosafe"],
+    "price_egp": "8 – 20",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_loperamide",
+    "generic_name": "loperamide",
+    "classes": ["antidiarrheal"],
+    "indications": ["non-infectious diarrhea"],
+    "brands_egypt": ["Imodium", "Lopram"],
+    "price_egp": "20 – 70",
+    "last_verified": "2025-09",
+    "notes": "Avoid in bloody diarrhea / suspected invasive infection."
+  },
+  {
+    "drug_id": "m_ondansetron",
+    "generic_name": "ondansetron",
+    "classes": ["antiemetic"],
+    "indications": ["nausea and vomiting"],
+    "brands_egypt": ["Zofran", "Danset"],
+    "price_egp": "60 – 200",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_sumatriptan",
+    "generic_name": "sumatriptan",
+    "classes": ["triptan"],
+    "indications": ["migraine"],
+    "brands_egypt": ["Imigran", "Sumitrex"],
+    "price_egp": "120 – 350",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_amlodipine",
+    "generic_name": "amlodipine",
+    "classes": ["calcium channel blocker", "antihypertensive"],
+    "indications": ["hypertension", "angina"],
+    "brands_egypt": ["Norvasc", "Myodura"],
+    "price_egp": "30 – 90",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_lisinopril",
+    "generic_name": "lisinopril",
+    "classes": ["ace inhibitor", "antihypertensive"],
+    "indications": ["hypertension", "heart failure"],
+    "brands_egypt": ["Zestril", "Sinopril"],
+    "price_egp": "25 – 80",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_losartan",
+    "generic_name": "losartan",
+    "classes": ["arb", "antihypertensive"],
+    "indications": ["hypertension"],
+    "brands_egypt": ["Cozaar", "Lozar"],
+    "price_egp": "30 – 95",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_indapamide",
+    "generic_name": "indapamide",
+    "classes": ["thiazide-like diuretic", "antihypertensive"],
+    "indications": ["hypertension"],
+    "brands_egypt": ["Natrilix"],
+    "price_egp": "35 – 85",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_metformin",
+    "generic_name": "metformin",
+    "classes": ["biguanide", "antidiabetic"],
+    "indications": ["type 2 diabetes mellitus"],
+    "brands_egypt": ["Glucophage", "Cidophage"],
+    "price_egp": "20 – 70",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_gliclazide",
+    "generic_name": "gliclazide",
+    "classes": ["sulfonylurea", "antidiabetic"],
+    "indications": ["type 2 diabetes mellitus"],
+    "brands_egypt": ["Diamicron"],
+    "price_egp": "55 – 130",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_empagliflozin",
+    "generic_name": "empagliflozin",
+    "classes": ["sglt2 inhibitor", "antidiabetic"],
+    "indications": ["type 2 diabetes mellitus", "heart failure"],
+    "brands_egypt": ["Jardiance"],
+    "price_egp": "260 – 420",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_insulin_glargine",
+    "generic_name": "insulin glargine",
+    "classes": ["long-acting insulin"],
+    "indications": ["diabetes mellitus"],
+    "brands_egypt": ["Lantus", "Toujeo"],
+    "price_egp": "350 – 800",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_salbutamol",
+    "generic_name": "salbutamol",
+    "classes": ["short-acting beta agonist", "bronchodilator"],
+    "indications": ["asthma", "copd"],
+    "brands_egypt": ["Ventolin", "Farcolin"],
+    "price_egp": "30 – 120",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_ipratropium",
+    "generic_name": "ipratropium",
+    "classes": ["anticholinergic", "bronchodilator"],
+    "indications": ["asthma exacerbation", "copd"],
+    "brands_egypt": ["Atrovent"],
+    "price_egp": "60 – 160",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_prednisolone",
+    "generic_name": "prednisolone",
+    "classes": ["corticosteroid"],
+    "indications": ["asthma exacerbation", "inflammatory conditions"],
+    "brands_egypt": ["Hostacortin", "Solupred"],
+    "price_egp": "20 – 80",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_budesonide",
+    "generic_name": "budesonide",
+    "classes": ["inhaled corticosteroid"],
+    "indications": ["asthma maintenance"],
+    "brands_egypt": ["Pulmicort"],
+    "price_egp": "120 – 300",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_aspirin",
+    "generic_name": "aspirin",
+    "classes": ["antiplatelet", "nsaid"],
+    "indications": ["acute coronary syndrome", "secondary prevention"],
+    "brands_egypt": ["Aspocid", "Rivo"],
+    "price_egp": "5 – 25",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_clopidogrel",
+    "generic_name": "clopidogrel",
+    "classes": ["antiplatelet"],
+    "indications": ["acute coronary syndrome"],
+    "brands_egypt": ["Plavix", "Clopex"],
+    "price_egp": "120 – 320",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_atorvastatin",
+    "generic_name": "atorvastatin",
+    "classes": ["statin"],
+    "indications": ["dyslipidemia", "secondary prevention"],
+    "brands_egypt": ["Lipitor", "Ator"],
+    "price_egp": "40 – 150",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_bisoprolol",
+    "generic_name": "bisoprolol",
+    "classes": ["beta blocker"],
+    "indications": ["hypertension", "heart failure", "ischemic heart disease"],
+    "brands_egypt": ["Concor"],
+    "price_egp": "55 – 150",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_ferrous_sulfate",
+    "generic_name": "ferrous sulfate",
+    "classes": ["iron supplement"],
+    "indications": ["iron-deficiency anemia"],
+    "brands_egypt": ["Ferro-65", "Ferromen"],
+    "price_egp": "20 – 70",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_ferrous_fumarate",
+    "generic_name": "ferrous fumarate",
+    "classes": ["iron supplement"],
+    "indications": ["iron-deficiency anemia"],
+    "brands_egypt": ["Haemojet", "Ferose"],
+    "price_egp": "30 – 95",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_omeprazole",
+    "generic_name": "omeprazole",
+    "classes": ["proton pump inhibitor"],
+    "indications": ["gerd", "peptic ulcer"],
+    "brands_egypt": ["Gasec", "Omez", "Risek"],
+    "price_egp": "25 – 90",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_pantoprazole",
+    "generic_name": "pantoprazole",
+    "classes": ["proton pump inhibitor"],
+    "indications": ["gerd"],
+    "brands_egypt": ["Controloc", "Pantoloc"],
+    "price_egp": "55 – 180",
+    "last_verified": "2025-09"
+  },
+  {
+    "drug_id": "m_ranitidine",
+    "generic_name": "ranitidine",
+    "classes": ["h2 receptor antagonist"],
+    "indications": ["gerd"],
+    "brands_egypt": ["Zantac"],
+    "price_egp": "30 – 90",
+    "last_verified": "2025-09",
+    "notes": "Availability limited globally; verify local supply."
+  },
+  {
+    "drug_id": "m_cetirizine",
+    "generic_name": "cetirizine",
+    "classes": ["antihistamine", "h1 blocker"],
+    "indications": ["allergic rhinitis", "urticaria", "pruritus"],
+    "brands_egypt": ["Zyrtec", "Histazine", "Allercet"],
+    "price_egp": "20 – 55",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_loratadine",
+    "generic_name": "loratadine",
+    "classes": ["antihistamine", "h1 blocker"],
+    "indications": ["allergic rhinitis", "urticaria"],
+    "brands_egypt": ["Clarityne", "Lorinase"],
+    "price_egp": "25 – 60",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_hydrocortisone_topical",
+    "generic_name": "hydrocortisone (topical)",
+    "classes": ["topical corticosteroid"],
+    "indications": ["atopic dermatitis", "eczema", "contact dermatitis"],
+    "brands_egypt": ["Hydrocort", "Cortyl"],
+    "price_egp": "20 – 45",
+    "last_verified": "2026-04",
+    "notes": "Low-potency; short courses only."
+  },
+  {
+    "drug_id": "m_betamethasone_topical",
+    "generic_name": "betamethasone (topical)",
+    "classes": ["topical corticosteroid"],
+    "indications": ["eczema", "psoriasis"],
+    "brands_egypt": ["Diprosone", "Betaderm"],
+    "price_egp": "30 – 70",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_clotrimazole_topical",
+    "generic_name": "clotrimazole (topical)",
+    "classes": ["antifungal", "imidazole"],
+    "indications": ["tinea corporis", "tinea pedis", "candidiasis"],
+    "brands_egypt": ["Canesten", "Candistan"],
+    "price_egp": "25 – 60",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_fluconazole",
+    "generic_name": "fluconazole",
+    "classes": ["antifungal", "triazole"],
+    "indications": ["candidiasis", "tinea", "vaginal thrush"],
+    "brands_egypt": ["Diflucan", "Treflucan"],
+    "price_egp": "25 – 90",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_permethrin_topical",
+    "generic_name": "permethrin (topical)",
+    "classes": ["scabicide", "pediculicide"],
+    "indications": ["scabies", "pediculosis"],
+    "brands_egypt": ["Acticin", "Lyclear"],
+    "price_egp": "60 – 120",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_mebendazole",
+    "generic_name": "mebendazole",
+    "classes": ["anthelmintic"],
+    "indications": ["enterobiasis", "ascariasis", "trichuriasis"],
+    "brands_egypt": ["Vermox", "Antiver"],
+    "price_egp": "20 – 45",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_praziquantel",
+    "generic_name": "praziquantel",
+    "classes": ["anthelmintic"],
+    "indications": ["schistosomiasis", "taeniasis"],
+    "brands_egypt": ["Distocide", "Biltricide"],
+    "price_egp": "70 – 180",
+    "last_verified": "2026-04",
+    "notes": "First-line for schistosomiasis in Egypt."
+  },
+  {
+    "drug_id": "m_metronidazole",
+    "generic_name": "metronidazole",
+    "classes": ["antibiotic", "antiprotozoal", "nitroimidazole"],
+    "indications": ["amoebiasis", "giardiasis", "bacterial vaginosis", "h. pylori"],
+    "brands_egypt": ["Flagyl", "Amrizole"],
+    "price_egp": "20 – 60",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_ciprofloxacin",
+    "generic_name": "ciprofloxacin",
+    "classes": ["antibiotic", "fluoroquinolone"],
+    "indications": ["complicated UTI", "pyelonephritis", "typhoid", "bacterial gastroenteritis"],
+    "brands_egypt": ["Ciprobay", "Cipro", "Ciprocin"],
+    "price_egp": "40 – 130",
+    "last_verified": "2026-04",
+    "notes": "Tendon rupture risk; avoid in pregnancy/<18y unless essential."
+  },
+  {
+    "drug_id": "m_ceftriaxone",
+    "generic_name": "ceftriaxone",
+    "classes": ["antibiotic", "cephalosporin"],
+    "indications": ["pyelonephritis", "meningitis", "typhoid", "severe pneumonia"],
+    "brands_egypt": ["Rocephin", "Ceftrex", "Cefaxone"],
+    "price_egp": "40 – 130",
+    "last_verified": "2026-04",
+    "notes": "Parenteral; hospital/ER setting."
+  },
+  {
+    "drug_id": "m_doxycycline",
+    "generic_name": "doxycycline",
+    "classes": ["antibiotic", "tetracycline"],
+    "indications": ["atypical pneumonia", "acne vulgaris", "rickettsial disease"],
+    "brands_egypt": ["Vibramycin", "Tabocine"],
+    "price_egp": "30 – 90",
+    "last_verified": "2026-04",
+    "notes": "Avoid in pregnancy and children <8y."
+  },
+  {
+    "drug_id": "m_clindamycin",
+    "generic_name": "clindamycin",
+    "classes": ["antibiotic", "lincosamide"],
+    "indications": ["skin and soft tissue infection", "acne", "anaerobic infection"],
+    "brands_egypt": ["Dalacin C"],
+    "price_egp": "60 – 180",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_chloramphenicol_eye",
+    "generic_name": "chloramphenicol (eye drops)",
+    "classes": ["antibiotic"],
+    "indications": ["bacterial conjunctivitis"],
+    "brands_egypt": ["Spersanicol", "Chloramphecol"],
+    "price_egp": "15 – 35",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_levothyroxine",
+    "generic_name": "levothyroxine",
+    "classes": ["thyroid hormone"],
+    "indications": ["hypothyroidism"],
+    "brands_egypt": ["Eltroxin", "Euthyrox"],
+    "price_egp": "35 – 90",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_carbimazole",
+    "generic_name": "carbimazole",
+    "classes": ["antithyroid"],
+    "indications": ["hyperthyroidism", "graves disease"],
+    "brands_egypt": ["Neo-Mercazole"],
+    "price_egp": "60 – 130",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_propranolol",
+    "generic_name": "propranolol",
+    "classes": ["beta blocker"],
+    "indications": ["thyrotoxic symptom control", "essential tremor", "migraine prophylaxis"],
+    "brands_egypt": ["Inderal"],
+    "price_egp": "20 – 50",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_carvedilol",
+    "generic_name": "carvedilol",
+    "classes": ["beta blocker", "alpha-1 blocker"],
+    "indications": ["chronic heart failure", "hypertension"],
+    "brands_egypt": ["Carvid", "Dilatrend"],
+    "price_egp": "40 – 110",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_furosemide",
+    "generic_name": "furosemide",
+    "classes": ["loop diuretic"],
+    "indications": ["heart failure", "pulmonary edema", "edema"],
+    "brands_egypt": ["Lasix", "Salurix"],
+    "price_egp": "20 – 50",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_spironolactone",
+    "generic_name": "spironolactone",
+    "classes": ["potassium-sparing diuretic", "aldosterone antagonist"],
+    "indications": ["heart failure", "resistant hypertension", "ascites"],
+    "brands_egypt": ["Aldactone"],
+    "price_egp": "40 – 110",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_warfarin",
+    "generic_name": "warfarin",
+    "classes": ["anticoagulant", "vitamin k antagonist"],
+    "indications": ["atrial fibrillation", "DVT", "PE", "mechanical valve"],
+    "brands_egypt": ["Marevan"],
+    "price_egp": "20 – 50",
+    "last_verified": "2026-04",
+    "notes": "Requires INR monitoring."
+  },
+  {
+    "drug_id": "m_enoxaparin",
+    "generic_name": "enoxaparin",
+    "classes": ["anticoagulant", "lmwh"],
+    "indications": ["DVT", "PE", "ACS bridging"],
+    "brands_egypt": ["Clexane"],
+    "price_egp": "180 – 450",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_diclofenac",
+    "generic_name": "diclofenac",
+    "classes": ["nsaid", "analgesic"],
+    "indications": ["renal colic", "musculoskeletal pain", "gout flare"],
+    "brands_egypt": ["Voltaren", "Cataflam", "Olfen"],
+    "price_egp": "25 – 70",
+    "last_verified": "2026-04",
+    "notes": "Caution: cardiovascular and GI risk."
+  },
+  {
+    "drug_id": "m_naproxen",
+    "generic_name": "naproxen",
+    "classes": ["nsaid", "analgesic"],
+    "indications": ["musculoskeletal pain", "gout flare", "dysmenorrhea"],
+    "brands_egypt": ["Naprosyn"],
+    "price_egp": "30 – 80",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_colchicine",
+    "generic_name": "colchicine",
+    "classes": ["antigout"],
+    "indications": ["acute gout", "familial mediterranean fever"],
+    "brands_egypt": ["Colchimax", "Goutichine"],
+    "price_egp": "60 – 150",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_allopurinol",
+    "generic_name": "allopurinol",
+    "classes": ["xanthine oxidase inhibitor", "urate-lowering"],
+    "indications": ["chronic gout prophylaxis", "hyperuricemia"],
+    "brands_egypt": ["Zyloric"],
+    "price_egp": "30 – 70",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_methotrexate",
+    "generic_name": "methotrexate",
+    "classes": ["dmard", "antimetabolite"],
+    "indications": ["rheumatoid arthritis", "psoriasis"],
+    "brands_egypt": ["Methotrex", "Trexall"],
+    "price_egp": "70 – 200",
+    "last_verified": "2026-04",
+    "notes": "Weekly dosing; folic acid supplementation required."
+  },
+  {
+    "drug_id": "m_hydroxychloroquine",
+    "generic_name": "hydroxychloroquine",
+    "classes": ["dmard", "antimalarial"],
+    "indications": ["rheumatoid arthritis", "SLE"],
+    "brands_egypt": ["Plaquenil"],
+    "price_egp": "120 – 320",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_sodium_valproate",
+    "generic_name": "sodium valproate",
+    "classes": ["antiepileptic"],
+    "indications": ["generalized epilepsy", "bipolar disorder"],
+    "brands_egypt": ["Depakine"],
+    "price_egp": "60 – 200",
+    "last_verified": "2026-04",
+    "notes": "Contraindicated in pregnancy/women of childbearing age unless no alternative."
+  },
+  {
+    "drug_id": "m_levetiracetam",
+    "generic_name": "levetiracetam",
+    "classes": ["antiepileptic"],
+    "indications": ["focal epilepsy", "generalized epilepsy"],
+    "brands_egypt": ["Keppra", "Tiratam"],
+    "price_egp": "120 – 380",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_carbamazepine",
+    "generic_name": "carbamazepine",
+    "classes": ["antiepileptic", "neuropathic analgesic"],
+    "indications": ["focal epilepsy", "trigeminal neuralgia"],
+    "brands_egypt": ["Tegretol"],
+    "price_egp": "40 – 130",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_sertraline",
+    "generic_name": "sertraline",
+    "classes": ["ssri", "antidepressant"],
+    "indications": ["major depression", "generalized anxiety", "OCD", "PTSD"],
+    "brands_egypt": ["Lustral", "Moodapex"],
+    "price_egp": "60 – 200",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_escitalopram",
+    "generic_name": "escitalopram",
+    "classes": ["ssri", "antidepressant"],
+    "indications": ["major depression", "generalized anxiety"],
+    "brands_egypt": ["Cipralex"],
+    "price_egp": "120 – 320",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_diazepam",
+    "generic_name": "diazepam",
+    "classes": ["benzodiazepine"],
+    "indications": ["acute anxiety", "muscle spasm", "status epilepticus"],
+    "brands_egypt": ["Valium"],
+    "price_egp": "20 – 50",
+    "last_verified": "2026-04",
+    "notes": "Short-term use; dependence risk."
+  },
+  {
+    "drug_id": "m_zolpidem",
+    "generic_name": "zolpidem",
+    "classes": ["z-drug", "hypnotic"],
+    "indications": ["short-term insomnia"],
+    "brands_egypt": ["Stilnox"],
+    "price_egp": "70 – 200",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_lactulose",
+    "generic_name": "lactulose",
+    "classes": ["osmotic laxative"],
+    "indications": ["chronic constipation", "hepatic encephalopathy"],
+    "brands_egypt": ["Duphalac", "Laevolac"],
+    "price_egp": "40 – 110",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_tamsulosin",
+    "generic_name": "tamsulosin",
+    "classes": ["alpha-1 blocker"],
+    "indications": ["benign prostatic hyperplasia", "ureteric stone passage"],
+    "brands_egypt": ["Omnic", "Flomax"],
+    "price_egp": "60 – 180",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_finasteride",
+    "generic_name": "finasteride",
+    "classes": ["5-alpha reductase inhibitor"],
+    "indications": ["benign prostatic hyperplasia"],
+    "brands_egypt": ["Proscar"],
+    "price_egp": "120 – 320",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_cyanocobalamin",
+    "generic_name": "cyanocobalamin (vitamin B12)",
+    "classes": ["vitamin"],
+    "indications": ["B12 deficiency anemia", "pernicious anemia"],
+    "brands_egypt": ["Tri-B", "Depovit-B12"],
+    "price_egp": "20 – 70",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_folic_acid",
+    "generic_name": "folic acid",
+    "classes": ["vitamin"],
+    "indications": ["folate deficiency", "pregnancy supplementation"],
+    "brands_egypt": ["Folicare", "Folic"],
+    "price_egp": "10 – 30",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_cholecalciferol",
+    "generic_name": "cholecalciferol (vitamin D3)",
+    "classes": ["vitamin"],
+    "indications": ["vitamin D deficiency", "osteomalacia"],
+    "brands_egypt": ["Devarol", "Vidrop"],
+    "price_egp": "30 – 90",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_sofosbuvir_daclatasvir",
+    "generic_name": "sofosbuvir-daclatasvir",
+    "classes": ["direct-acting antiviral"],
+    "indications": ["chronic hepatitis C"],
+    "brands_egypt": ["MPI Viropack Plus", "Sovaldi+Daklinza"],
+    "price_egp": "1500 – 4500",
+    "last_verified": "2026-04",
+    "notes": "Egypt national HCV elimination program; price subsidised in public sector."
+  },
+  {
+    "drug_id": "m_tb_fdc",
+    "generic_name": "rifampicin-isoniazid-pyrazinamide-ethambutol",
+    "classes": ["antitubercular", "fixed-dose combination"],
+    "indications": ["pulmonary tuberculosis (intensive phase)"],
+    "brands_egypt": ["Myrin-P", "Rimstar"],
+    "price_egp": "200 – 600",
+    "last_verified": "2026-04",
+    "notes": "Provided free via Egyptian National TB Programme; obtain through chest hospitals."
+  },
+  {
+    "drug_id": "m_tretinoin_topical",
+    "generic_name": "tretinoin (topical)",
+    "classes": ["topical retinoid"],
+    "indications": ["acne vulgaris"],
+    "brands_egypt": ["Retin-A"],
+    "price_egp": "60 – 160",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_benzoyl_peroxide",
+    "generic_name": "benzoyl peroxide (topical)",
+    "classes": ["keratolytic", "antibacterial"],
+    "indications": ["acne vulgaris"],
+    "brands_egypt": ["Panoxyl", "Acnefree"],
+    "price_egp": "60 – 150",
+    "last_verified": "2026-04"
+  },
+  {
+    "drug_id": "m_hyoscine_butylbromide",
+    "generic_name": "hyoscine butylbromide",
+    "classes": ["antimuscarinic", "antispasmodic"],
+    "indications": ["IBS cramps", "renal colic", "biliary colic"],
+    "brands_egypt": ["Buscopan", "Buscapine"],
+    "price_egp": "25 – 70",
+    "last_verified": "2026-04"
+  }
+]

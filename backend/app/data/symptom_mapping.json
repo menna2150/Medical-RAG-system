@@ -1,0 +1,51 @@
+[
+  {"symptom": "fever", "disease_id": "d_influenza", "weight": 0.9},
+  {"symptom": "fever", "disease_id": "d_community_pneumonia", "weight": 0.85},
+  {"symptom": "fever", "disease_id": "d_acute_pharyngitis", "weight": 0.7},
+  {"symptom": "fever", "disease_id": "d_acute_gastroenteritis", "weight": 0.5},
+  {"symptom": "fever", "disease_id": "d_uti_lower", "weight": 0.4},
+
+  {"symptom": "cough", "disease_id": "d_influenza", "weight": 0.85},
+  {"symptom": "cough", "disease_id": "d_community_pneumonia", "weight": 0.9},
+  {"symptom": "cough", "disease_id": "d_asthma_exacerbation", "weight": 0.8},
+  {"symptom": "productive cough", "disease_id": "d_community_pneumonia", "weight": 0.95},
+
+  {"symptom": "shortness of breath", "disease_id": "d_community_pneumonia", "weight": 0.85},
+  {"symptom": "shortness of breath", "disease_id": "d_asthma_exacerbation", "weight": 0.95},
+  {"symptom": "shortness of breath", "disease_id": "d_acs_unstable_angina", "weight": 0.7},
+  {"symptom": "shortness of breath", "disease_id": "d_iron_deficiency_anemia", "weight": 0.5},
+
+  {"symptom": "chest pain", "disease_id": "d_acs_unstable_angina", "weight": 0.95},
+  {"symptom": "chest pain", "disease_id": "d_community_pneumonia", "weight": 0.6},
+  {"symptom": "chest pain", "disease_id": "d_gerd", "weight": 0.55},
+
+  {"symptom": "headache", "disease_id": "d_migraine", "weight": 0.95},
+  {"symptom": "headache", "disease_id": "d_influenza", "weight": 0.6},
+  {"symptom": "headache", "disease_id": "d_essential_hypertension", "weight": 0.5},
+
+  {"symptom": "sore throat", "disease_id": "d_acute_pharyngitis", "weight": 0.95},
+  {"symptom": "sore throat", "disease_id": "d_influenza", "weight": 0.5},
+
+  {"symptom": "dysuria", "disease_id": "d_uti_lower", "weight": 0.95},
+  {"symptom": "urinary frequency", "disease_id": "d_uti_lower", "weight": 0.9},
+  {"symptom": "urinary urgency", "disease_id": "d_uti_lower", "weight": 0.85},
+
+  {"symptom": "diarrhea", "disease_id": "d_acute_gastroenteritis", "weight": 0.95},
+  {"symptom": "vomiting", "disease_id": "d_acute_gastroenteritis", "weight": 0.85},
+  {"symptom": "abdominal pain", "disease_id": "d_acute_gastroenteritis", "weight": 0.7},
+
+  {"symptom": "wheezing", "disease_id": "d_asthma_exacerbation", "weight": 0.95},
+
+  {"symptom": "polyuria", "disease_id": "d_type2_diabetes", "weight": 0.9},
+  {"symptom": "polydipsia", "disease_id": "d_type2_diabetes", "weight": 0.9},
+  {"symptom": "weight loss", "disease_id": "d_type2_diabetes", "weight": 0.6},
+
+  {"symptom": "fatigue", "disease_id": "d_iron_deficiency_anemia", "weight": 0.85},
+  {"symptom": "pallor", "disease_id": "d_iron_deficiency_anemia", "weight": 0.9},
+
+  {"symptom": "heartburn", "disease_id": "d_gerd", "weight": 0.95},
+  {"symptom": "regurgitation", "disease_id": "d_gerd", "weight": 0.9},
+
+  {"symptom": "high blood pressure", "disease_id": "d_essential_hypertension", "weight": 0.95},
+  {"symptom": "dizziness", "disease_id": "d_essential_hypertension", "weight": 0.5}
+]

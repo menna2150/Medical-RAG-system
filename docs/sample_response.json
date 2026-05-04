@@ -1,0 +1,73 @@
+{
+  "diagnoses": [
+    {
+      "name": "Influenza",
+      "icd11": "1E32",
+      "confidence": "high",
+      "confidence_score": 0.78,
+      "reason": "Abrupt-onset fever, dry cough, myalgia and headache in an adult during respiratory-virus season match the classical influenza prodrome described in WHO ICD-11 1E32 and NICE NG200.",
+      "tests": [
+        "Rapid influenza diagnostic test (RIDT)",
+        "RT-PCR for influenza A/B",
+        "CBC",
+        "Chest X-ray if pneumonia suspected"
+      ],
+      "treatments": [
+        {
+          "drug": "oseltamivir",
+          "brands_in_egypt": ["Tamiflu"],
+          "price_egp": "320 – 520",
+          "notes": "Most effective within 48h of symptom onset."
+        },
+        {
+          "drug": "paracetamol",
+          "brands_in_egypt": ["Panadol", "Adol", "Cetal", "Abimol"],
+          "price_egp": "8 – 35",
+          "notes": "OTC. Avoid >4g/day adult."
+        }
+      ],
+      "sources": ["WHO ICD-11; NICE NG200"]
+    },
+    {
+      "name": "Community-acquired pneumonia",
+      "icd11": "CA40",
+      "confidence": "medium",
+      "confidence_score": 0.58,
+      "reason": "Productive cough and fever raise the possibility of bacterial pneumonia; chest examination and imaging are needed before antibiotic choice.",
+      "tests": ["Chest X-ray PA view", "CBC with differential", "CRP", "Sputum Gram stain & culture", "SpO2"],
+      "treatments": [
+        {
+          "drug": "amoxicillin",
+          "brands_in_egypt": ["Hi-Pen", "Amoxil", "E-Mox"],
+          "price_egp": "30 – 70",
+          "notes": "Check penicillin allergy."
+        },
+        {
+          "drug": "azithromycin",
+          "brands_in_egypt": ["Zithromax", "Zisrocin", "Xithrone"],
+          "price_egp": "60 – 180"
+        }
+      ],
+      "sources": ["NICE NG138; WHO ICD-11"]
+    },
+    {
+      "name": "Acute pharyngitis",
+      "icd11": "CA02",
+      "confidence": "low",
+      "confidence_score": 0.41,
+      "reason": "Sore throat with fever may be viral or streptococcal; risk-stratify with Centor / FeverPAIN before considering antibiotics.",
+      "tests": ["Centor / FeverPAIN score", "Rapid antigen detection test (RADT)"],
+      "treatments": [
+        {
+          "drug": "amoxicillin",
+          "brands_in_egypt": ["Hi-Pen", "Amoxil", "E-Mox"],
+          "price_egp": "30 – 70"
+        }
+      ],
+      "sources": ["NICE NG84"]
+    }
+  ],
+  "disclaimer": "This is a decision-support tool. Final decisions must be made by a licensed physician. Do not use as a substitute for clinical judgement, examination, or established protocols.",
+  "query_language": "en",
+  "retrieval_quality": 0.612
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "d_influenza",
+    "name": "Influenza",
+    "icd11": "1E32",
+    "description": "Acute viral respiratory infection caused by influenza A or B virus, typically presenting with abrupt onset of fever, myalgia, headache, and dry cough.",
+    "symptoms": ["fever", "cough", "myalgia", "headache", "fatigue", "sore throat", "chills", "runny nose"],
+    "tests": ["Rapid influenza diagnostic test (RIDT)", "RT-PCR for influenza A/B", "CBC", "Chest X-ray if pneumonia suspected"],
+    "treatments": ["oseltamivir", "paracetamol", "ibuprofen"],
+    "source": "WHO ICD-11; NICE NG200"
+  },
+  {
+    "id": "d_community_pneumonia",
+    "name": "Community-acquired pneumonia",
+    "icd11": "CA40",
+    "description": "Lower respiratory tract infection acquired outside the hospital, commonly bacterial (S. pneumoniae most frequent). Features productive cough, fever, dyspnea, focal chest signs.",
+    "symptoms": ["fever", "productive cough", "shortness of breath", "chest pain", "tachypnea", "fatigue", "rigors"],
+    "tests": ["Chest X-ray PA view", "CBC with differential", "CRP", "Sputum Gram stain & culture", "Blood cultures if severe", "SpO2"],
+    "treatments": ["amoxicillin", "amoxicillin-clavulanate", "azithromycin", "paracetamol"],
+    "source": "NICE NG138; WHO ICD-11"
+  },
+  {
+    "id": "d_acute_pharyngitis",
+    "name": "Acute pharyngitis (Strep throat if GAS+)",
+    "icd11": "CA02",
+    "description": "Inflammation of the pharynx, most often viral; bacterial (Group A streptococcus) requires antibiotic therapy. Centor criteria help estimate GAS likelihood.",
+    "symptoms": ["sore throat", "fever", "tonsillar exudate", "tender cervical lymphadenopathy", "headache", "absence of cough"],
+    "tests": ["Centor / FeverPAIN score", "Rapid antigen detection test (RADT)", "Throat swab culture if RADT negative and high suspicion"],
+    "treatments": ["amoxicillin", "phenoxymethylpenicillin", "paracetamol"],
+    "source": "NICE NG84; WHO ICD-11"
+  },
+  {
+    "id": "d_uti_lower",
+    "name": "Lower urinary tract infection",
+    "icd11": "GC08",
+    "description": "Infection of the bladder/urethra, predominantly E. coli in women. Presents with dysuria, urinary frequency, urgency, suprapubic pain.",
+    "symptoms": ["dysuria", "urinary frequency", "urinary urgency", "suprapubic pain", "hematuria", "cloudy urine"],
+    "tests": ["Urine dipstick (nitrites, leukocyte esterase)", "Mid-stream urine culture & sensitivity"],
+    "treatments": ["nitrofurantoin", "fosfomycin", "trimethoprim"],
+    "source": "NICE NG109; WHO ICD-11"
+  },
+  {
+    "id": "d_acute_gastroenteritis",
+    "name": "Acute gastroenteritis",
+    "icd11": "1A40",
+    "description": "Inflammation of the GI tract, commonly viral (norovirus, rotavirus) or bacterial. Features acute diarrhea ± vomiting, abdominal cramps, often self-limiting.",
+    "symptoms": ["diarrhea", "vomiting", "abdominal pain", "abdominal cramps", "nausea", "low-grade fever", "dehydration"],
+    "tests": ["Clinical assessment of hydration", "Stool culture if bloody/persistent", "U&E if dehydration suspected"],
+    "treatments": ["oral rehydration salts", "loperamide", "ondansetron"],
+    "source": "WHO ICD-11; NICE CG84"
+  },
+  {
+    "id": "d_migraine",
+    "name": "Migraine without aura",
+    "icd11": "8A80",
+    "description": "Recurrent primary headache disorder; unilateral, pulsating headache lasting 4–72h, with nausea, photophobia and/or phonophobia.",
+    "symptoms": ["headache", "unilateral headache", "pulsating headache", "nausea", "photophobia", "phonophobia", "vomiting"],
+    "tests": ["Clinical diagnosis (IHS criteria)", "Neuroimaging only if red flags present"],
+    "treatments": ["ibuprofen", "paracetamol", "sumatriptan"],
+    "source": "NICE CG150; WHO ICD-11"
+  },
+  {
+    "id": "d_essential_hypertension",
+    "name": "Essential hypertension",
+    "icd11": "BA00",
+    "description": "Persistently elevated arterial blood pressure ≥140/90 mmHg without identifiable secondary cause; major cardiovascular risk factor.",
+    "symptoms": ["headache", "dizziness", "blurred vision", "fatigue", "high blood pressure", "chest discomfort"],
+    "tests": ["Standardised office BP measurement", "Ambulatory BP monitoring (ABPM)", "Urinalysis", "U&E", "Lipid profile", "ECG", "HbA1c"],
+    "treatments": ["amlodipine", "lisinopril", "losartan", "indapamide"],
+    "source": "NICE NG136; WHO HEARTS"
+  },
+  {
+    "id": "d_type2_diabetes",
+    "name": "Type 2 diabetes mellitus",
+    "icd11": "5A11",
+    "description": "Chronic metabolic disorder of insulin resistance and relative insulin deficiency leading to hyperglycemia.",
+    "symptoms": ["polyuria", "polydipsia", "weight loss", "fatigue", "blurred vision", "recurrent infections", "diabetes"],
+    "tests": ["Fasting plasma glucose", "HbA1c", "Random glucose", "Urine ACR", "Lipid profile", "Fundoscopy"],
+    "treatments": ["metformin", "gliclazide", "empagliflozin", "insulin glargine"],
+    "source": "NICE NG28; WHO ICD-11"
+  },
+  {
+    "id": "d_asthma_exacerbation",
+    "name": "Acute asthma exacerbation",
+    "icd11": "CA23",
+    "description": "Acute worsening of airway inflammation and bronchoconstriction; presents with wheeze, dyspnea, chest tightness, and reduced peak flow.",
+    "symptoms": ["wheezing", "shortness of breath", "chest tightness", "cough", "tachypnea", "use of accessory muscles"],
+    "tests": ["Peak expiratory flow rate (PEFR)", "SpO2", "Arterial blood gas if severe", "Chest X-ray if atypical"],
+    "treatments": ["salbutamol", "ipratropium", "prednisolone", "budesonide"],
+    "source": "GINA 2024; NICE NG80"
+  },
+  {
+    "id": "d_acs_unstable_angina",
+    "name": "Acute coronary syndrome (suspected)",
+    "icd11": "BA40",
+    "description": "Spectrum including unstable angina and myocardial infarction. Central chest pain ± radiation, sweating, dyspnea — requires urgent evaluation.",
+    "symptoms": ["chest pain", "central chest pain", "radiating arm pain", "shortness of breath", "sweating", "nausea"],
+    "tests": ["12-lead ECG (within 10 min)", "Serial high-sensitivity troponin", "CBC", "U&E", "Lipid profile", "Chest X-ray"],
+    "treatments": ["aspirin", "clopidogrel", "atorvastatin", "bisoprolol"],
+    "source": "ESC 2023; NICE NG185"
+  },
+  {
+    "id": "d_iron_deficiency_anemia",
+    "name": "Iron-deficiency anemia",
+    "icd11": "3A00",
+    "description": "Microcytic hypochromic anemia due to depleted iron stores; common causes include menstrual blood loss, GI loss, and dietary insufficiency.",
+    "symptoms": ["fatigue", "pallor", "shortness of breath on exertion", "dizziness", "palpitations", "headache"],
+    "tests": ["CBC with indices", "Ferritin", "Serum iron, TIBC, transferrin saturation", "Reticulocyte count", "Stool occult blood"],
+    "treatments": ["ferrous sulfate", "ferrous fumarate"],
+    "source": "NICE CKS; WHO ICD-11"
+  },
+  {
+    "id": "d_gerd",
+    "name": "Gastroesophageal reflux disease",
+    "icd11": "DA22",
+    "description": "Reflux of gastric contents causing heartburn, regurgitation, and esophageal mucosal injury.",
+    "symptoms": ["heartburn", "regurgitation", "chest pain", "epigastric pain", "cough", "sore throat at night"],
+    "tests": ["Clinical diagnosis (typical symptoms)", "Trial of PPI", "Upper GI endoscopy if alarm features"],
+    "treatments": ["omeprazole", "pantoprazole", "ranitidine", "antacids"],
+    "source": "NICE CG184; WHO ICD-11"
+  },
+  {
+    "id": "d_acute_bronchitis",
+    "name": "Acute bronchitis",
+    "icd11": "CA20",
+    "description": "Self-limiting lower-airway inflammation, almost always viral; cough lasting up to 3 weeks ± wheeze, chest discomfort. Antibiotics rarely indicated.",
+    "symptoms": ["cough", "productive cough", "low-grade fever", "wheezing", "chest discomfort", "fatigue"],
+    "tests": ["Clinical diagnosis", "Chest X-ray only if pneumonia suspected", "SpO2"],
+    "treatments": ["paracetamol", "ibuprofen", "salbutamol"],
+    "source": "NICE NG120; WHO ICD-11"
+  },
+  {
+    "id": "d_allergic_rhinitis",
+    "name": "Allergic rhinitis",
+    "icd11": "CA08.0",
+    "description": "IgE-mediated nasal mucosal inflammation triggered by aeroallergens; sneezing, rhinorrhea, nasal obstruction, itching.",
+    "symptoms": ["sneezing", "rhinorrhea", "nasal congestion", "nasal itching", "itchy eyes", "watery eyes"],
+    "tests": ["Clinical diagnosis", "Skin prick test", "Specific IgE if severe"],
+    "treatments": ["cetirizine", "loratadine", "budesonide"],
+    "source": "ARIA 2019; WHO ICD-11"
+  },
+  {
+    "id": "d_acute_sinusitis",
+    "name": "Acute sinusitis",
+    "icd11": "CA09",
+    "description": "Symptomatic inflammation of paranasal sinus mucosa, usually viral but bacterial superinfection possible after >10 days.",
+    "symptoms": ["facial pain", "nasal congestion", "purulent nasal discharge", "headache", "fever", "anosmia"],
+    "tests": ["Clinical diagnosis", "Sinus CT only if complication suspected"],
+    "treatments": ["amoxicillin", "amoxicillin-clavulanate", "paracetamol"],
+    "source": "EPOS 2020; NICE NG79"
+  },
+  {
+    "id": "d_copd_exacerbation",
+    "name": "COPD exacerbation",
+    "icd11": "CA22.Z",
+    "description": "Acute worsening of dyspnea, sputum volume, or sputum purulence in a patient with chronic obstructive pulmonary disease.",
+    "symptoms": ["shortness of breath", "increased sputum", "purulent sputum", "wheezing", "cough", "chest tightness"],
+    "tests": ["SpO2", "Arterial blood gas", "Chest X-ray", "CBC", "CRP"],
+    "treatments": ["salbutamol", "ipratropium", "prednisolone", "amoxicillin", "doxycycline"],
+    "source": "GOLD 2024; NICE NG115"
+  },
+  {
+    "id": "d_pulmonary_tuberculosis",
+    "name": "Pulmonary tuberculosis",
+    "icd11": "1B10",
+    "description": "Chronic granulomatous infection by Mycobacterium tuberculosis. Endemic in Egypt; presents with chronic cough, fever, weight loss, night sweats.",
+    "symptoms": ["chronic cough", "hemoptysis", "weight loss", "night sweats", "fever", "fatigue", "anorexia"],
+    "tests": ["Sputum AFB smear x3", "GeneXpert MTB/RIF", "Sputum culture", "Chest X-ray", "Tuberculin skin test"],
+    "treatments": ["rifampicin-isoniazid-pyrazinamide-ethambutol"],
+    "source": "WHO Global TB 2023; Egyptian National TB Programme"
+  },
+  {
+    "id": "d_otitis_media",
+    "name": "Acute otitis media",
+    "icd11": "AA92",
+    "description": "Bacterial or viral infection of the middle ear; common in children. Otalgia, fever, bulging tympanic membrane.",
+    "symptoms": ["ear pain", "fever", "irritability", "hearing loss", "ear discharge"],
+    "tests": ["Otoscopy", "Tympanometry if recurrent"],
+    "treatments": ["amoxicillin", "amoxicillin-clavulanate", "paracetamol", "ibuprofen"],
+    "source": "NICE NG91; WHO ICD-11"
+  },
+  {
+    "id": "d_otitis_externa",
+    "name": "Otitis externa",
+    "icd11": "AA20",
+    "description": "Inflammation of the external auditory canal; bacterial (P. aeruginosa, S. aureus) or fungal. Otalgia worsened by tragal pressure.",
+    "symptoms": ["ear pain", "ear itching", "ear discharge", "ear fullness", "tragal tenderness"],
+    "tests": ["Otoscopy", "Ear swab if recurrent or unresponsive"],
+    "treatments": ["ciprofloxacin", "clotrimazole (topical)", "paracetamol"],
+    "source": "NICE CKS; WHO ICD-11"
+  },
+  {
+    "id": "d_peptic_ulcer",
+    "name": "Peptic ulcer disease",
+    "icd11": "DA60",
+    "description": "Mucosal break in stomach or duodenum, mostly H. pylori or NSAID-related. Epigastric pain, dyspepsia, possible bleeding.",
+    "symptoms": ["epigastric pain", "dyspepsia", "nausea", "early satiety", "melena", "hematemesis"],
+    "tests": ["H. pylori urea breath test or stool antigen", "Upper GI endoscopy if alarm features", "CBC"],
+    "treatments": ["omeprazole", "pantoprazole", "amoxicillin", "metronidazole"],
+    "source": "Maastricht VI; NICE CG184"
+  },
+  {
+    "id": "d_h_pylori",
+    "name": "Helicobacter pylori infection",
+    "icd11": "1A30",
+    "description": "Chronic gastric infection associated with peptic ulcer disease, gastric MALT lymphoma, gastric cancer.",
+    "symptoms": ["epigastric pain", "dyspepsia", "bloating", "nausea"],
+    "tests": ["Urea breath test", "Stool antigen test", "Endoscopic biopsy with rapid urease test"],
+    "treatments": ["omeprazole", "amoxicillin", "clarithromycin", "metronidazole"],
+    "source": "Maastricht VI"
+  },
+  {
+    "id": "d_ibs",
+    "name": "Irritable bowel syndrome",
+    "icd11": "DD91",
+    "description": "Chronic functional bowel disorder of recurrent abdominal pain related to defecation, with altered stool form/frequency (Rome IV criteria).",
+    "symptoms": ["abdominal pain", "abdominal cramps", "bloating", "diarrhea", "constipation", "mucus in stool"],
+    "tests": ["Clinical diagnosis (Rome IV)", "CBC", "CRP", "Coeliac serology", "Stool calprotectin to exclude IBD"],
+    "treatments": ["hyoscine butylbromide", "loperamide", "lactulose"],
+    "source": "NICE CG61; Rome IV"
+  },
+  {
+    "id": "d_constipation",
+    "name": "Chronic functional constipation",
+    "icd11": "DD90",
+    "description": "Persistent difficult, infrequent, or incomplete defecation without organic cause.",
+    "symptoms": ["infrequent stools", "hard stools", "straining", "incomplete evacuation", "abdominal discomfort"],
+    "tests": ["Clinical diagnosis", "Thyroid function if suspected hypothyroidism", "Calcium if suspected"],
+    "treatments": ["lactulose"],
+    "source": "NICE CG99; Rome IV"
+  },
+  {
+    "id": "d_chronic_hepatitis_c",
+    "name": "Chronic hepatitis C",
+    "icd11": "1E51.1",
+    "description": "Chronic HCV infection — historically high prevalence in Egypt; now treatable with direct-acting antivirals via the national elimination program.",
+    "symptoms": ["fatigue", "right upper quadrant discomfort", "jaundice", "anorexia", "often asymptomatic"],
+    "tests": ["HCV antibody", "HCV RNA PCR", "Liver function tests", "FibroScan or APRI score", "HCV genotype"],
+    "treatments": ["sofosbuvir-daclatasvir"],
+    "source": "EASL 2020; Egyptian Ministry of Health 100M Healthy Lives"
+  },
+  {
+    "id": "d_acute_hepatitis_a",
+    "name": "Acute hepatitis A",
+    "icd11": "1E50.0",
+    "description": "Acute self-limiting viral hepatitis transmitted fecal-orally; jaundice, anorexia, RUQ pain.",
+    "symptoms": ["jaundice", "anorexia", "nausea", "vomiting", "right upper quadrant pain", "fever", "dark urine"],
+    "tests": ["Anti-HAV IgM", "ALT/AST", "Bilirubin", "INR"],
+    "treatments": ["paracetamol", "oral rehydration salts"],
+    "source": "WHO ICD-11; NICE CKS"
+  },
+  {
+    "id": "d_biliary_colic",
+    "name": "Biliary colic / cholelithiasis",
+    "icd11": "DC11",
+    "description": "Transient gallstone obstruction of the cystic duct; episodic RUQ pain after fatty meals.",
+    "symptoms": ["right upper quadrant pain", "epigastric pain", "nausea", "vomiting", "pain radiating to right shoulder"],
+    "tests": ["Abdominal ultrasound", "Liver function tests", "Lipase if pancreatitis suspected"],
+    "treatments": ["hyoscine butylbromide", "diclofenac", "paracetamol"],
+    "source": "NICE CG188; WHO ICD-11"
+  },
+  {
+    "id": "d_chronic_heart_failure",
+    "name": "Chronic heart failure",
+    "icd11": "BD10",
+    "description": "Chronic syndrome of impaired cardiac output (reduced or preserved EF) producing dyspnea, fatigue, edema.",
+    "symptoms": ["shortness of breath", "orthopnea", "paroxysmal nocturnal dyspnea", "ankle edema", "fatigue", "exercise intolerance"],
+    "tests": ["NT-proBNP", "Echocardiography", "ECG", "Chest X-ray", "U&E", "Iron studies"],
+    "treatments": ["lisinopril", "carvedilol", "spironolactone", "furosemide", "empagliflozin"],
+    "source": "ESC 2023; NICE NG106"
+  },
+  {
+    "id": "d_atrial_fibrillation",
+    "name": "Atrial fibrillation",
+    "icd11": "BC81",
+    "description": "Supraventricular tachyarrhythmia with irregularly irregular pulse; major embolic stroke risk requiring anticoagulation by CHA2DS2-VASc.",
+    "symptoms": ["palpitations", "shortness of breath", "fatigue", "dizziness", "chest discomfort", "irregular pulse"],
+    "tests": ["12-lead ECG", "24-h Holter if paroxysmal", "Echocardiography", "TSH", "U&E", "CBC"],
+    "treatments": ["bisoprolol", "warfarin", "amiodarone"],
+    "source": "ESC 2024; NICE NG196"
+  },
+  {
+    "id": "d_stable_angina",
+    "name": "Stable angina",
+    "icd11": "BA40.0",
+    "description": "Predictable exertional chest discomfort relieved by rest or nitrates due to fixed coronary stenosis.",
+    "symptoms": ["chest pain", "exertional chest pain", "chest tightness", "shortness of breath on exertion", "radiating arm pain"],
+    "tests": ["Resting ECG", "CT coronary angiography", "Exercise tolerance test", "Lipid profile", "HbA1c"],
+    "treatments": ["aspirin", "atorvastatin", "bisoprolol", "amlodipine"],
+    "source": "ESC 2019; NICE NG185"
+  },
+  {
+    "id": "d_dyslipidemia",
+    "name": "Dyslipidemia",
+    "icd11": "5C80",
+    "description": "Abnormal lipid profile — elevated LDL, low HDL, or hypertriglyceridemia — increasing atherosclerotic cardiovascular risk.",
+    "symptoms": ["asymptomatic", "xanthelasma", "tendon xanthomata"],
+    "tests": ["Lipid profile (fasting)", "HbA1c", "TSH", "QRISK3 cardiovascular risk score"],
+    "treatments": ["atorvastatin"],
+    "source": "ESC/EAS 2019; NICE CG181"
+  },
+  {
+    "id": "d_dvt",
+    "name": "Deep vein thrombosis (suspected)",
+    "icd11": "BD71",
+    "description": "Thrombus in a deep vein of the lower limb; risk of pulmonary embolism. Unilateral leg swelling, pain, warmth.",
+    "symptoms": ["unilateral leg swelling", "calf pain", "leg warmth", "leg redness", "pitting edema"],
+    "tests": ["Wells score", "D-dimer", "Compression ultrasound of leg veins"],
+    "treatments": ["enoxaparin", "warfarin"],
+    "source": "NICE NG158; ESC 2019"
+  },
+  {
+    "id": "d_hypothyroidism",
+    "name": "Primary hypothyroidism",
+    "icd11": "5A00",
+    "description": "Reduced thyroid hormone production, mostly autoimmune (Hashimoto). Fatigue, cold intolerance, weight gain, bradycardia.",
+    "symptoms": ["fatigue", "weight gain", "cold intolerance", "constipation", "dry skin", "bradycardia", "menstrual irregularity"],
+    "tests": ["TSH", "Free T4", "Anti-TPO antibodies", "Lipid profile", "CBC"],
+    "treatments": ["levothyroxine"],
+    "source": "ATA 2014; NICE NG145"
+  },
+  {
+    "id": "d_hyperthyroidism",
+    "name": "Hyperthyroidism (Graves disease)",
+    "icd11": "5A02",
+    "description": "Excess thyroid hormone, commonly autoimmune (Graves). Tachycardia, weight loss, heat intolerance, tremor, exophthalmos.",
+    "symptoms": ["palpitations", "weight loss", "heat intolerance", "tremor", "anxiety", "diarrhea", "exophthalmos"],
+    "tests": ["TSH (suppressed)", "Free T4", "Free T3", "TSH receptor antibodies", "Thyroid uptake scan"],
+    "treatments": ["carbimazole", "propranolol"],
+    "source": "ATA 2016; NICE NG145"
+  },
+  {
+    "id": "d_dka",
+    "name": "Diabetic ketoacidosis",
+    "icd11": "5A22",
+    "description": "Acute life-threatening metabolic decompensation in diabetes — hyperglycemia, ketosis, metabolic acidosis. Requires hospital management.",
+    "symptoms": ["polyuria", "polydipsia", "abdominal pain", "vomiting", "deep rapid breathing", "fruity breath", "drowsiness"],
+    "tests": ["Capillary glucose", "Blood/urine ketones", "Arterial blood gas", "U&E", "CBC", "ECG"],
+    "treatments": ["insulin glargine"],
+    "source": "JBDS 2023; ADA 2024"
+  },
+  {
+    "id": "d_obesity",
+    "name": "Obesity",
+    "icd11": "5B81",
+    "description": "Excess adiposity (BMI ≥30 kg/m²) increasing risk of T2DM, cardiovascular disease, and many cancers.",
+    "symptoms": ["weight gain", "exertional dyspnea", "joint pain", "fatigue"],
+    "tests": ["BMI", "Waist circumference", "HbA1c", "Lipid profile", "Liver function tests", "TSH"],
+    "treatments": ["metformin", "empagliflozin"],
+    "source": "WHO 2024; NICE CG189"
+  },
+  {
+    "id": "d_tension_headache",
+    "name": "Tension-type headache",
+    "icd11": "8A81",
+    "description": "Bilateral pressing/tightening non-pulsating headache, mild–moderate, not aggravated by routine activity.",
+    "symptoms": ["headache", "bilateral headache", "pressing headache", "neck tightness"],
+    "tests": ["Clinical diagnosis (IHS criteria)", "Imaging only if red flags"],
+    "treatments": ["paracetamol", "ibuprofen"],
+    "source": "IHS ICHD-3; NICE CG150"
+  },
+  {
+    "id": "d_epilepsy",
+    "name": "Epilepsy (generalized tonic-clonic)",
+    "icd11": "8A60",
+    "description": "Recurrent unprovoked seizures with loss of consciousness, tonic-clonic movements, postictal drowsiness.",
+    "symptoms": ["loss of consciousness", "tonic-clonic movements", "tongue biting", "incontinence", "postictal confusion"],
+    "tests": ["EEG", "Brain MRI", "Electrolytes", "Glucose", "ECG"],
+    "treatments": ["sodium valproate", "levetiracetam", "carbamazepine"],
+    "source": "ILAE 2017; NICE NG217"
+  },
+  {
+    "id": "d_acute_stroke",
+    "name": "Acute ischemic stroke (suspected)",
+    "icd11": "8B11",
+    "description": "Sudden focal neurological deficit from cerebral ischemia. Time-critical — needs urgent imaging and possible thrombolysis/thrombectomy.",
+    "symptoms": ["sudden weakness", "facial droop", "slurred speech", "aphasia", "visual loss", "ataxia", "sudden severe headache"],
+    "tests": ["Non-contrast CT brain", "CT angiography", "Glucose", "ECG", "Lipid profile", "CBC", "INR"],
+    "treatments": ["aspirin", "clopidogrel", "atorvastatin"],
+    "source": "AHA/ASA 2019; NICE NG128"
+  },
+  {
+    "id": "d_bell_palsy",
+    "name": "Bell's palsy",
+    "icd11": "8B82",
+    "description": "Acute idiopathic unilateral lower motor neuron facial nerve palsy. Diagnosis of exclusion.",
+    "symptoms": ["unilateral facial weakness", "drooping mouth", "inability to close eye", "loss of forehead wrinkles", "altered taste"],
+    "tests": ["Clinical diagnosis", "Imaging only if atypical features"],
+    "treatments": ["prednisolone"],
+    "source": "AAN 2012; NICE CKS"
+  },
+  {
+    "id": "d_bppv",
+    "name": "Benign paroxysmal positional vertigo",
+    "icd11": "AB31.0",
+    "description": "Brief positional vertigo from otoconia displacement in the semicircular canals. Dix-Hallpike positive.",
+    "symptoms": ["vertigo", "positional vertigo", "nausea", "imbalance", "nystagmus on positional testing"],
+    "tests": ["Dix-Hallpike maneuver", "Clinical diagnosis"],
+    "treatments": ["paracetamol"],
+    "source": "AAO-HNS 2017; NICE CKS"
+  },
+  {
+    "id": "d_pyelonephritis",
+    "name": "Acute pyelonephritis",
+    "icd11": "GB50",
+    "description": "Bacterial infection of the renal parenchyma; flank pain, fever, rigors, often with lower UTI symptoms.",
+    "symptoms": ["flank pain", "fever", "rigors", "dysuria", "urinary frequency", "nausea", "vomiting"],
+    "tests": ["Urinalysis", "Mid-stream urine culture", "CBC", "CRP", "U&E", "Blood cultures if severe", "Renal ultrasound if obstruction suspected"],
+    "treatments": ["ciprofloxacin", "ceftriaxone", "amoxicillin-clavulanate"],
+    "source": "NICE NG111; IDSA 2010"
+  },
+  {
+    "id": "d_renal_colic",
+    "name": "Renal colic / nephrolithiasis",
+    "icd11": "GB70",
+    "description": "Severe loin-to-groin colicky pain from ureteric stone obstruction.",
+    "symptoms": ["loin pain", "groin pain", "hematuria", "nausea", "vomiting", "restlessness"],
+    "tests": ["Urinalysis", "Non-contrast CT KUB", "U&E", "Calcium", "Uric acid"],
+    "treatments": ["diclofenac", "paracetamol", "tamsulosin", "hyoscine butylbromide"],
+    "source": "NICE NG118; EAU 2024"
+  },
+  {
+    "id": "d_bph",
+    "name": "Benign prostatic hyperplasia",
+    "icd11": "GA90",
+    "description": "Non-malignant prostatic enlargement causing lower urinary tract symptoms in older men.",
+    "symptoms": ["urinary hesitancy", "weak stream", "nocturia", "urinary frequency", "incomplete emptying", "urgency"],
+    "tests": ["IPSS score", "Urinalysis", "PSA", "U&E", "Urinary flow rate", "Post-void residual ultrasound"],
+    "treatments": ["tamsulosin", "finasteride"],
+    "source": "EAU 2024; NICE NG97"
+  },
+  {
+    "id": "d_atopic_dermatitis",
+    "name": "Atopic dermatitis (eczema)",
+    "icd11": "EA80",
+    "description": "Chronic relapsing pruritic inflammatory skin disorder, often with personal/family atopy.",
+    "symptoms": ["pruritus", "erythematous rash", "dry skin", "lichenification", "flexural rash"],
+    "tests": ["Clinical diagnosis", "Skin swab if infected"],
+    "treatments": ["hydrocortisone (topical)", "betamethasone (topical)", "cetirizine"],
+    "source": "NICE CG57; AAD 2023"
+  },
+  {
+    "id": "d_acne_vulgaris",
+    "name": "Acne vulgaris",
+    "icd11": "ED80",
+    "description": "Chronic inflammatory disorder of pilosebaceous units; comedones, papules, pustules, scarring.",
+    "symptoms": ["comedones", "papules", "pustules", "facial scarring", "oily skin"],
+    "tests": ["Clinical diagnosis"],
+    "treatments": ["benzoyl peroxide (topical)", "tretinoin (topical)", "doxycycline", "clindamycin"],
+    "source": "NICE NG198; AAD 2024"
+  },
+  {
+    "id": "d_tinea_corporis",
+    "name": "Tinea corporis",
+    "icd11": "1F28.1",
+    "description": "Superficial dermatophyte infection of trunk/limb skin — annular scaly plaques with central clearing.",
+    "symptoms": ["annular rash", "scaly rash", "pruritus", "expanding rash", "central clearing"],
+    "tests": ["Clinical diagnosis", "Skin scraping for KOH microscopy and fungal culture"],
+    "treatments": ["clotrimazole (topical)", "fluconazole"],
+    "source": "BAD 2014; CDC"
+  },
+  {
+    "id": "d_scabies",
+    "name": "Scabies",
+    "icd11": "1G04",
+    "description": "Pruritic dermatosis caused by Sarcoptes scabiei mite. Burrows in interdigital webs, wrists, axillae, genitalia. Worse at night.",
+    "symptoms": ["intense itching", "nocturnal itching", "burrows", "papular rash", "interdigital rash", "household contacts affected"],
+    "tests": ["Clinical diagnosis", "Skin scraping microscopy", "Dermoscopy"],
+    "treatments": ["permethrin (topical)", "cetirizine"],
+    "source": "WHO 2020; BAD 2024"
+  },
+  {
+    "id": "d_urticaria",
+    "name": "Urticaria",
+    "icd11": "EB05",
+    "description": "Transient pruritic wheals from mast-cell-mediated histamine release; acute (<6 wks) or chronic.",
+    "symptoms": ["wheals", "pruritus", "angioedema", "transient rash"],
+    "tests": ["Clinical diagnosis", "CBC and CRP if chronic", "Allergy testing if trigger suspected"],
+    "treatments": ["cetirizine", "loratadine", "prednisolone"],
+    "source": "EAACI/GA²LEN 2022"
+  },
+  {
+    "id": "d_bacterial_conjunctivitis",
+    "name": "Bacterial conjunctivitis",
+    "icd11": "9A60.0",
+    "description": "Bacterial infection of the bulbar/palpebral conjunctiva — purulent discharge, eyelid sticking, conjunctival injection.",
+    "symptoms": ["red eye", "purulent eye discharge", "eyelid sticking", "foreign body sensation", "no visual loss"],
+    "tests": ["Clinical diagnosis", "Conjunctival swab if severe or unresponsive"],
+    "treatments": ["chloramphenicol (eye drops)"],
+    "source": "NICE CKS; AAO 2023"
+  },
+  {
+    "id": "d_schistosomiasis",
+    "name": "Schistosomiasis (urinary/intestinal)",
+    "icd11": "1F86",
+    "description": "Parasitic infection by Schistosoma haematobium (urinary) or S. mansoni (intestinal). Endemic in parts of rural Egypt.",
+    "symptoms": ["hematuria", "terminal hematuria", "abdominal pain", "diarrhea", "hepatosplenomegaly", "bladder symptoms"],
+    "tests": ["Urine microscopy for ova", "Stool microscopy for ova", "Serology (ELISA)", "Bladder/abdominal ultrasound"],
+    "treatments": ["praziquantel"],
+    "source": "WHO 2022; Egyptian Ministry of Health"
+  },
+  {
+    "id": "d_typhoid",
+    "name": "Typhoid fever",
+    "icd11": "1A07",
+    "description": "Systemic infection by Salmonella enterica serovar Typhi. Stepwise fever, relative bradycardia, abdominal pain, rose spots.",
+    "symptoms": ["prolonged fever", "abdominal pain", "headache", "constipation", "diarrhea", "relative bradycardia", "rose spots"],
+    "tests": ["Blood culture", "Stool culture", "CBC", "LFTs", "Widal test (limited utility)"],
+    "treatments": ["ciprofloxacin", "ceftriaxone", "azithromycin"],
+    "source": "WHO 2023; IDSA"
+  },
+  {
+    "id": "d_amoebiasis",
+    "name": "Amoebiasis (intestinal)",
+    "icd11": "1A36.0",
+    "description": "Infection by Entamoeba histolytica — bloody diarrhea, tenesmus, possible hepatic abscess.",
+    "symptoms": ["bloody diarrhea", "abdominal pain", "tenesmus", "fever", "weight loss"],
+    "tests": ["Stool microscopy for trophozoites/cysts", "Stool antigen ELISA", "Liver ultrasound if abscess suspected"],
+    "treatments": ["metronidazole"],
+    "source": "WHO ICD-11; CDC"
+  },
+  {
+    "id": "d_low_back_pain",
+    "name": "Mechanical low back pain",
+    "icd11": "ME84.2",
+    "description": "Non-specific musculoskeletal low back pain without red flags; usually self-limiting.",
+    "symptoms": ["low back pain", "stiffness", "pain on movement", "muscle spasm"],
+    "tests": ["Clinical assessment", "Imaging only if red flags (trauma, neurological deficit, malignancy, infection)"],
+    "treatments": ["paracetamol", "ibuprofen", "diclofenac"],
+    "source": "NICE NG59"
+  },
+  {
+    "id": "d_osteoarthritis_knee",
+    "name": "Osteoarthritis (knee)",
+    "icd11": "FA00",
+    "description": "Degenerative joint disease — joint pain worse with activity, morning stiffness <30 min, crepitus, reduced range of motion.",
+    "symptoms": ["knee pain", "joint stiffness", "crepitus", "reduced range of motion", "pain on activity"],
+    "tests": ["Clinical diagnosis", "Weight-bearing knee X-ray"],
+    "treatments": ["paracetamol", "ibuprofen", "diclofenac"],
+    "source": "NICE NG226; OARSI 2019"
+  },
+  {
+    "id": "d_acute_gout",
+    "name": "Acute gout",
+    "icd11": "FA25",
+    "description": "Monosodium urate crystal arthropathy — sudden severe monoarthritis, classically first MTP joint, with redness and swelling.",
+    "symptoms": ["acute joint pain", "joint swelling", "joint redness", "joint warmth", "first MTP pain", "limited movement"],
+    "tests": ["Serum uric acid", "Joint aspiration for crystals", "CBC", "CRP", "U&E"],
+    "treatments": ["colchicine", "naproxen", "ibuprofen", "prednisolone", "allopurinol"],
+    "source": "ACR 2020; EULAR 2016"
+  },
+  {
+    "id": "d_rheumatoid_arthritis",
+    "name": "Rheumatoid arthritis",
+    "icd11": "FA20",
+    "description": "Chronic symmetrical inflammatory polyarthritis, predominantly small joints, with morning stiffness >1h. Autoimmune (RF, anti-CCP).",
+    "symptoms": ["symmetrical joint pain", "morning stiffness", "joint swelling", "fatigue", "metacarpophalangeal pain", "wrist pain"],
+    "tests": ["Rheumatoid factor", "Anti-CCP antibodies", "ESR", "CRP", "CBC", "Hand X-rays"],
+    "treatments": ["methotrexate", "hydroxychloroquine", "prednisolone", "ibuprofen"],
+    "source": "EULAR 2022; NICE NG100"
+  },
+  {
+    "id": "d_major_depression",
+    "name": "Major depressive disorder",
+    "icd11": "6A70",
+    "description": "Persistent low mood, anhedonia, and neurovegetative symptoms ≥2 weeks impairing function.",
+    "symptoms": ["low mood", "anhedonia", "fatigue", "sleep disturbance", "appetite change", "poor concentration", "guilt", "suicidal ideation"],
+    "tests": ["PHQ-9 score", "TSH", "CBC", "Vitamin B12 / folate", "Vitamin D"],
+    "treatments": ["sertraline", "escitalopram"],
+    "source": "NICE NG222; APA 2022"
+  },
+  {
+    "id": "d_generalized_anxiety",
+    "name": "Generalized anxiety disorder",
+    "icd11": "6B00",
+    "description": "Excessive uncontrollable worry on most days for ≥6 months with somatic symptoms.",
+    "symptoms": ["excessive worry", "restlessness", "muscle tension", "irritability", "poor sleep", "fatigue", "poor concentration"],
+    "tests": ["GAD-7 score", "TSH", "Caffeine/substance review"],
+    "treatments": ["sertraline", "escitalopram", "diazepam"],
+    "source": "NICE CG113; APA 2024"
+  },
+  {
+    "id": "d_insomnia",
+    "name": "Chronic insomnia",
+    "icd11": "7A00",
+    "description": "Difficulty initiating or maintaining sleep ≥3 nights/week for ≥3 months with daytime impairment.",
+    "symptoms": ["difficulty falling asleep", "frequent awakenings", "early morning waking", "daytime fatigue", "poor concentration"],
+    "tests": ["Sleep diary", "Epworth Sleepiness Scale", "TSH if indicated"],
+    "treatments": ["zolpidem"],
+    "source": "AASM 2021; NICE CKS"
+  },
+  {
+    "id": "d_b12_deficiency",
+    "name": "Vitamin B12 deficiency anemia",
+    "icd11": "3A01",
+    "description": "Megaloblastic anemia from B12 deficiency; macrocytosis, fatigue, glossitis, neuropathy.",
+    "symptoms": ["fatigue", "pallor", "glossitis", "peripheral neuropathy", "paresthesia", "memory impairment"],
+    "tests": ["CBC with indices (MCV)", "Serum B12", "Folate", "Anti-intrinsic factor antibodies", "Reticulocyte count"],
+    "treatments": ["cyanocobalamin (vitamin B12)", "folic acid"],
+    "source": "BSH 2014; NICE CKS"
+  }
+]
