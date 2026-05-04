@@ -1,6 +1,8 @@
 # MedRAG-EG — Medical Decision-Support RAG System for Egyptian Doctors
 
 > ⚠️ **Decision support only.** Final diagnoses and prescriptions must be made by a licensed physician.
+>
+>  https://medical-rag-system-kpy8.vercel.app/
 
 A production-ready Retrieval-Augmented Generation (RAG) system that takes patient symptoms and returns ranked differential diagnoses with evidence, recommended tests, treatments, and **medications available in the Egyptian market** (with EGP price ranges).
 
